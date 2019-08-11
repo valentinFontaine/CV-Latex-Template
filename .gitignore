@@ -1,0 +1,6 @@
+contact.tex
+*.aux
+*.log
+*.out
+*.pdf
+*.swp

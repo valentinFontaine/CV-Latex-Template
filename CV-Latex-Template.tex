@@ -8,90 +8,132 @@
 \usepackage{xcolor}
 
 \usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{pifont}
+
+
+\titleformat{\section}[hang]
+    {\Large\color{blue}\bfseries}
+    {}
+    {0em}
+    {}[\titlerule]
+\titlespacing{\section}{0cm}{0cm}{0.25cm}
+
+\titleformat{\subsection}[hang]
+        {\bfseries}
+        {}
+        {0em}
+        {}[]
+\titlespacing{\subsection}{0.25cm}{0.25cm}{0.25cm}
+
+\titlespacing{\paragraph}{0.50cm}{0.12cm}{0.12cm}
+
+\setitemize[0]{label=\ding{226}, leftmargin=0.9cm, itemsep=0.05cm}
 
 \geometry{a4paper, top=0.75cm, left=0.75cm, right=1.0cm, bottom=1.0cm}
 
 \begin{document}
 
+\hyphenrules{nohyphenation}
+
 \begin{minipage}{0.36\textwidth}
     \input{contact}
 \end{minipage}
 \begin{minipage}{0.63\textwidth}
-    \section{Ingénieur Mécanique}*
+    Ingénieur Mécanique
 
-    \begin{minipage}{0.65\textwidth}
+    \begin{minipage}{0.75\textwidth}
+        \subsection{Profil :}
         \begin{description}
             \item[Adaptable:]grande capacité d'apprentissage
             \item[Mobile:]possibilité de déplacement internationaux
             \item[Motivé]forte implication dans les projets
         \end{description}
     \end{minipage}
-    \begin{minipage}{0.33\textwidth}
+    \begin{minipage}{0.23\textwidth}
         \includegraphics[width=\textwidth]{img/image_CV.png}
     \end{minipage}
 \end{minipage}
 
 
-\begin{minipage}{0.23\textwidth}
-    \section{Logiciels}
+\begin{minipage}[t]{0.23\textwidth}
+    \section{LOGICIELS}
     \subsection{Dessin Technique}
-    Solidworks\\
-    Unigraphics NX\\
-    Autocad\\
-    Creo/Pro E\\
-    \subsection{Calcul numérique}
-    Solidworks\\
-    NX + Nastran\\
-    Octave/Matlab\\
-    Scilab\\
-    \subsection{Bureautique}
-    Excel\\
-    Suite office\\
-    latex\\
-
-    \section{Programmation}
-    \subsection{Programmation application}
-    VBA
-    \includegraphics[scale=0.25]{img/star.png}
-    \includegraphics[scale=0.25]{img/star.png}
-    \includegraphics[scale=0.25]{img/star.png}
-    \includegraphics[scale=0.25]{img/star.png}
-    \includegraphics[scale=0.25]{img/star.png}
-    \includegraphics[scale=0.25]{img/star.png}\\
-    Solidworks
-    \includegraphics[scale=0.25]{img/star.png}
-    \includegraphics[scale=0.25]{img/star.png}
-    \includegraphics[scale=0.25]{img/star.png}
-    \includegraphics[scale=0.25]{img/star.png}
-    \includegraphics[scale=0.25]{img/half_star.png}
-    \includegraphics[scale=0.25]{img/empty_star.png}\\
-    Langage C\\
-    \subsection{Développement Web}
-    HTML/CSS\\
-    PHP\\
-
-    \section{Langues}
-    \subsection{Anglais: C1 (855 - Toeic 2015)}
-    Compréhension\\
-    Expression\\
-    \subsection{Allemand : C1 (881 - WIDAF 2015)}
-    Compréhension\\
-    Expression\\
-
-    \section{Loisirs}
-    squash, vélotourisme\\
-    série tv, lecture\\
-    robotique, développement web\\
-\end{minipage}
-\begin{minipage}{0.75\textwidth}
-    \section{Formation}
     \begin{itemize}
-        \item{2012--2016 : Diplome d'Ingénieur en Génie Mécanique INSA Strasbourg (Anciennement ENSAIS)}
-        \item{2010--2012 : Classe Préparatoire intégrée INSA Strasbourg DeutschInsa (Moitié des enseignements en Allemand)}
-        \item{Juin 2010 : Baccalauréat mention européenne Allemand Obtenu avec mention Bien}
+        \item{Solidworks}
+        \item{Unigraphics NX}
+        \item{Autocad}
+        \item{Creo/Pro E}
     \end{itemize}
 
-    \section{MILTON ROY EUROPE : 1 entreprise, plusieurs expériences}
+    \subsection{Calcul numérique}
+        \begin{itemize}
+            \item{Solidworks}
+            \item{NX + Nastran}
+            \item{Octave/Matlab}
+            \item{Scilab}
+        \end{itemize}
+    \subsection{Bureautique}
+        \begin{itemize}
+            \item{Excel}
+            \item{Suite office}
+            \item{latex}
+        \end{itemize}
+
+    \section{PROGRAM.}
+    \subsection{Programmation application}
+        \begin{itemize}
+            \item{VBA
+                \hfill
+                \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                \includegraphics[scale=0.20]{img/star.png}}
+            \item{Solidworks
+                \hfill
+                \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                \includegraphics[scale=0.20]{img/half_star.png} \hspace{-0.2cm}
+                \includegraphics[scale=0.20]{img/empty_star.png}}
+            \item{Langage C}
+        \end{itemize}
+    \subsection{Développement Web}
+        \begin{itemize}
+            \item{HTML/CSS}
+            \item{PHP}
+        \end{itemize}
+
+    \section{LANGUES}
+    \subsection{Anglais: C1 (855-Toeic 2015)}
+        \begin{itemize}
+            \item{Compréhension}
+            \item{Expression}
+        \end{itemize}
+    \subsection{Allemand : C1 (881-WIDAF 2015)}
+        \begin{itemize}
+            \item{Compréhension}
+            \item{Expression}
+        \end{itemize}
+
+    \section{Loisirs}
+        \begin{itemize}
+            \item{squash, vélotourisme}
+            \item{série tv, lecture}
+            \item{robotique, développement web}
+        \end{itemize}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.72\textwidth}
+    \section{FORMATION}
+        \begin{itemize}
+            \item{2012--2016 : Diplome d'Ingénieur en Génie Mécanique INSA Strasbourg (Anciennement ENSAIS)}
+            \item{2010--2012 : Classe Préparatoire intégrée INSA Strasbourg DeutschInsa (Moitié des enseignements en Allemand)}
+            \item{Juin 2010 : Baccalauréat mention européenne Allemand Obtenu avec mention Bien}
+        \end{itemize}
+
+    \section{MILTON ROY : 1 entreprise, plusieurs expériences}
     \subsection{Juin 2018--Maintenant : Relais technique entre équipe agitation et Responsable Bureau d'Études}
     \begin{itemize}%
         \item Partage du temps de travail entre le site d’Avon (77) où travaille l’équipe Bureau d’Études agitation et Pont Saint Pierre (27)
@@ -109,7 +151,7 @@
         \item Projet d’automatisation des plans d’encombrement de pompe par macro Solidworks. Pilotage de Solidworks par Excel
     \end{itemize}
 
-    \subsection{Septembre 2016--Juin 2017: Participation au projet de tranfert de production de Samoreau(77) à Pont-Saint-Pierre(27)}
+    \subsection{Septembre 2016--Juin 2017 : Participation au projet de tranfert de production de Samoreau(77) à Pont-Saint-Pierre(27)}
     \begin{itemize}
         \item Design des cuves et circuits hydrauliques des moyens d’essais pour agitateurs (verticaux et horizontaux).
         \item Développement d’outils d’analyse des données techniques de l’ERP pour tous les services (supply chain, documentation, production,...)
@@ -118,7 +160,7 @@
     \end{itemize}
 
 
-    \subsection{2011--2016:Stages dans différents sites de l'entreprise}
+    \subsection{2011--2016 : Stages dans différents sites de l'entreprise}
     \begin{itemize}
         \item Juin à Août 2011 – Samoreau (77) – Mesures des propriétés hydrauliques d’hélices d’agitateurs
         \item Mars à Août 2014 – Samoreau (77) – Améliorations de feuilles de calculs de dimensionnement d’agitateurs

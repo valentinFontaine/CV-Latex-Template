@@ -11,7 +11,12 @@
 \usepackage{enumitem}
 \usepackage{pifont}
 
+\usepackage[framemethod=tikz]{mdframed}
+\usetikzlibrary{shadows}
 
+\geometry{a4paper, top=0.75cm, left=0.75cm, right=1.0cm, bottom=1.0cm}
+
+% Redéfinition format des titres/sections...
 \titleformat{\section}[hang]
     {\Large\color{blue}\bfseries}
     {}
@@ -28,9 +33,14 @@
 
 \titlespacing{\paragraph}{0.50cm}{0.12cm}{0.12cm}
 
+
+%% Redéfinition format des listes
 \setitemize[0]{label=\ding{226}, leftmargin=0.9cm, itemsep=0.05cm}
 
-\geometry{a4paper, top=0.75cm, left=0.75cm, right=1.0cm, bottom=1.0cm}
+% Création des formats de cadres
+\mdfdefinestyle{titre1}{backgroundcolor=lightgray}
+\mdfdefinestyle{cadreCompetences}{backgroundcolor=lightgray, shadow=true, shadowcolor=black, 
+          linewidth=1pt, linecolor=red, shadowsize=5.5pt, leftmargin=0pt, rightmargin=0pt, innerrightmargin=0pt}
 
 \begin{document}
 
@@ -40,8 +50,11 @@
     \input{contact}
 \end{minipage}
 \begin{minipage}{0.63\textwidth}
-    Ingénieur Mécanique
-
+    \begin{mdframed}[style=titre1]
+        \begin{flushright}
+            \Large{\textbf{Ingénieur Mécanique}}
+        \end{flushright}
+    \end{mdframed}
     \begin{minipage}{0.75\textwidth}
         \subsection{Profil :}
         \begin{description}
@@ -56,73 +69,75 @@
 \end{minipage}
 
 
-\begin{minipage}[t]{0.23\textwidth}
-    \section{LOGICIELS}
-    \subsection{Dessin Technique}
-    \begin{itemize}
-        \item{Solidworks}
-        \item{Unigraphics NX}
-        \item{Autocad}
-        \item{Creo/Pro E}
-    \end{itemize}
-
-    \subsection{Calcul numérique}
+\begin{minipage}[t]{0.25\textwidth}
+    \begin{mdframed}[style=cadreCompetences]
+        \section{LOGICIELS}
+        \subsection{Dessin Technique}
         \begin{itemize}
             \item{Solidworks}
-            \item{NX + Nastran}
-            \item{Octave/Matlab}
-            \item{Scilab}
-        \end{itemize}
-    \subsection{Bureautique}
-        \begin{itemize}
-            \item{Excel}
-            \item{Suite office}
-            \item{latex}
+            \item{Unigraphics NX}
+            \item{Autocad}
+            \item{Creo/Pro E}
         \end{itemize}
 
-    \section{PROGRAM.}
-    \subsection{Programmation application}
-        \begin{itemize}
-            \item{VBA
-                \hfill
-                \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
-                \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
-                \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
-                \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
-                \includegraphics[scale=0.20]{img/star.png}}
-            \item{Solidworks
-                \hfill
-                \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
-                \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
-                \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
-                \includegraphics[scale=0.20]{img/half_star.png} \hspace{-0.2cm}
-                \includegraphics[scale=0.20]{img/empty_star.png}}
-            \item{Langage C}
-        \end{itemize}
-    \subsection{Développement Web}
-        \begin{itemize}
-            \item{HTML/CSS}
-            \item{PHP}
-        \end{itemize}
+        \subsection{Calcul numérique}
+            \begin{itemize}
+                \item{Solidworks}
+                \item{NX + Nastran}
+                \item{Octave/Matlab}
+                \item{Scilab}
+            \end{itemize}
+        \subsection{Bureautique}
+            \begin{itemize}
+                \item{Excel}
+                \item{Suite office}
+                \item{latex}
+            \end{itemize}
 
-    \section{LANGUES}
-    \subsection{Anglais: C1 (855-Toeic 2015)}
-        \begin{itemize}
-            \item{Compréhension}
-            \item{Expression}
-        \end{itemize}
-    \subsection{Allemand : C1 (881-WIDAF 2015)}
-        \begin{itemize}
-            \item{Compréhension}
-            \item{Expression}
-        \end{itemize}
+        \section{PROGRAM.}
+        \subsection{Programmation application}
+            \begin{itemize}
+                \item{VBA
+                    \hfill
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png}}
+                \item{Solidworks
+                    \hfill
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/half_star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/empty_star.png}}
+                \item{Langage C}
+            \end{itemize}
+        \subsection{Développement Web}
+            \begin{itemize}
+                \item{HTML/CSS}
+                \item{PHP}
+            \end{itemize}
 
-    \section{Loisirs}
-        \begin{itemize}
-            \item{squash, vélotourisme}
-            \item{série tv, lecture}
-            \item{robotique, développement web}
-        \end{itemize}
+        \section{LANGUES}
+        \subsection{Anglais: C1 (855-Toeic 2015)}
+            \begin{itemize}
+                \item{Compréhension}
+                \item{Expression}
+            \end{itemize}
+        \subsection{Allemand : C1 (881-WIDAF 2015)}
+            \begin{itemize}
+                \item{Compréhension}
+                \item{Expression}
+            \end{itemize}
+
+        \section{Loisirs}
+            \begin{itemize}
+                \item{squash, vélotourisme}
+                \item{série tv, lecture}
+                \item{robotique, développement web}
+            \end{itemize}
+    \end{mdframed}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.72\textwidth}

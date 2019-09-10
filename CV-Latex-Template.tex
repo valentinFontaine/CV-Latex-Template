@@ -17,8 +17,9 @@
 \geometry{a4paper, top=0.75cm, left=0.75cm, right=1.0cm, bottom=1.0cm}
 
 % Redéfinition format des titres/sections...
+\definecolor{lightBlue}{RGB}{84, 141, 212}
 \titleformat{\section}[hang]
-    {\Large\color{blue}\bfseries}
+    {\Large\color{lightBlue}\bfseries}
     {}
     {0em}
     {}[\titlerule]
@@ -31,16 +32,17 @@
         {}[]
 \titlespacing{\subsection}{0.25cm}{0.25cm}{0.25cm}
 
-\titlespacing{\paragraph}{0.50cm}{0.12cm}{0.12cm}
+\titlespacing{\paragraph}{0.30cm}{0.12cm}{0.12cm}
 
 
 %% Redéfinition format des listes
 \setitemize[0]{label=\ding{226}, leftmargin=0.9cm, itemsep=0.05cm}
 
 % Création des formats de cadres
-\mdfdefinestyle{titre1}{backgroundcolor=lightgray}
-\mdfdefinestyle{cadreCompetences}{backgroundcolor=lightgray, shadow=true, shadowcolor=black, 
-          linewidth=1pt, linecolor=red, shadowsize=5.5pt, leftmargin=0pt, rightmargin=0pt, innerrightmargin=0pt}
+\definecolor{veryLightGray}{RGB}{238, 238, 238}
+\mdfdefinestyle{titre1}{backgroundcolor=veryLightGray}
+\mdfdefinestyle{cadreCompetences}{backgroundcolor=veryLightGray, shadow=true, shadowcolor=black, 
+          linewidth=0pt, linecolor=red, shadowsize=6.5pt, leftmargin=0pt, rightmargin=0pt, innerrightmargin=5pt}
 
 \begin{document}
 
@@ -69,29 +71,95 @@
 \end{minipage}
 
 
-\begin{minipage}[t]{0.25\textwidth}
+\begin{minipage}[t]{0.26\textwidth}
     \begin{mdframed}[style=cadreCompetences]
         \section{LOGICIELS}
         \subsection{Dessin Technique}
         \begin{itemize}
-            \item{Solidworks}
-            \item{Unigraphics NX}
-            \item{Autocad}
-            \item{Creo/Pro E}
+            \item{Solidworks
+                    \hfill
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/half_star.png}}
+            \item{UG NX
+                    \hfill
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/empty_star.png}}
+            \item{Autocad
+                    \hfill
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/empty_star.png}}
+            \item{Creo/Pro E
+                    \hfill
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/empty_star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/empty_star.png}}
         \end{itemize}
 
         \subsection{Calcul numérique}
             \begin{itemize}
-                \item{Solidworks}
-                \item{NX + Nastran}
-                \item{Octave/Matlab}
-                \item{Scilab}
+                \item{Solidworks
+                    \hfill
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/empty_star.png}}
+                \item{UG NX
+                    \hfill
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/empty_star.png}}
+                \item{Matlab
+                    \hfill
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/half_star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/empty_star.png}}
+                \item{Octave
+                    \hfill
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/half_star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/empty_star.png}}
             \end{itemize}
         \subsection{Bureautique}
             \begin{itemize}
-                \item{Excel}
-                \item{Suite office}
-                \item{latex}
+                \item{Excel
+                    \hfill
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/half_star.png}}
+                \item{Suite office
+                    \hfill
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/empty_star.png}}
+                \item{\LaTeX
+                    \hfill
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/half_star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/empty_star.png}}
             \end{itemize}
 
         \section{PROGRAM.}
@@ -109,38 +177,81 @@
                     \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
                     \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
                     \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/empty_star.png}}
+                \item{Langage C
+                    \hfill
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
                     \includegraphics[scale=0.20]{img/half_star.png} \hspace{-0.2cm}
                     \includegraphics[scale=0.20]{img/empty_star.png}}
-                \item{Langage C}
             \end{itemize}
         \subsection{Développement Web}
             \begin{itemize}
-                \item{HTML/CSS}
-                \item{PHP}
+                \item{HTML/CSS
+                    \hfill
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/half_star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/empty_star.png}
+                    \includegraphics[scale=0.20]{img/empty_star.png}}
+                \item{PHP
+                    \hfill
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/half_star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/empty_star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/empty_star.png}}
             \end{itemize}
 
         \section{LANGUES}
-        \subsection{Anglais: C1 (855-Toeic 2015)}
+        \subsection{Anglais : C1 \newline (855 - Toeic 2015)}
             \begin{itemize}
-                \item{Compréhension}
-                \item{Expression}
+                \item{Compréh.
+                    \hfill
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/half_star.png}}
+                \item{Expression
+                    \hfill
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/half_star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/empty_star.png}}
             \end{itemize}
-        \subsection{Allemand : C1 (881-WIDAF 2015)}
+        \subsection{Allemand : C1 \newline (881 - WIDAF 2015)}
             \begin{itemize}
-                \item{Compréhension}
-                \item{Expression}
+                \item{Compréh.
+                    \hfill
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/half_star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/empty_star.png}}
+                \item{Expression
+                    \hfill
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/empty_star.png} \hspace{-0.2cm}
+                    \includegraphics[scale=0.20]{img/empty_star.png}}
             \end{itemize}
 
         \section{Loisirs}
             \begin{itemize}
                 \item{squash, vélotourisme}
                 \item{série tv, lecture}
-                \item{robotique, développement web}
+                \item{robotique}
             \end{itemize}
     \end{mdframed}
 \end{minipage}
 \hfill
-\begin{minipage}[t]{0.72\textwidth}
+\begin{minipage}[t]{0.70\textwidth}
+    \vspace{0.15cm}
     \section{FORMATION}
         \begin{itemize}
             \item{2012--2016 : Diplome d'Ingénieur en Génie Mécanique INSA Strasbourg (Anciennement ENSAIS)}

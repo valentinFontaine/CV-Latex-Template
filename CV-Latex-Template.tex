@@ -14,7 +14,7 @@
 \usepackage[framemethod=tikz]{mdframed}
 \usetikzlibrary{shadows}
 
-\geometry{a4paper, top=0.75cm, left=0.75cm, right=1.0cm, bottom=1.0cm}
+\geometry{a4paper, top=0.75cm, left=0.75cm, right=0.75cm, bottom=1.0cm}
 
 % Redéfinition format des titres/sections...
 \definecolor{lightBlue}{RGB}{84, 141, 212}
@@ -32,7 +32,7 @@
         {}[]
 \titlespacing{\subsection}{0.25cm}{0.25cm}{0.25cm}
 
-\titlespacing{\paragraph}{0.30cm}{0.12cm}{0.12cm}
+\titlespacing{\paragraph}{0.25cm}{0.12cm}{0.12cm}
 
 
 %% Redéfinition format des listes
@@ -49,9 +49,10 @@
 \hyphenrules{nohyphenation}
 
 \begin{minipage}{0.36\textwidth}
+    \vspace{0.30cm}
     \input{contact}
 \end{minipage}
-\begin{minipage}{0.63\textwidth}
+\begin{minipage}{0.62\textwidth}
     \begin{mdframed}[style=titre1]
         \begin{flushright}
             \Large{\textbf{Ingénieur Mécanique}}
@@ -59,11 +60,11 @@
     \end{mdframed}
     \begin{minipage}{0.75\textwidth}
         \subsection{Profil :}
-        \begin{description}
-            \item[Adaptable:]grande capacité d'apprentissage
-            \item[Mobile:]possibilité de déplacement internationaux
-            \item[Motivé]forte implication dans les projets
-        \end{description}
+        \begin{itemize}
+            \item{\textbf{Adaptable:} grande capacité d'apprentissage}
+            \item{\textbf{Mobile:} possibilité de déplacements internationaux}
+            \item{\textbf{Motivé:} forte implication dans les projets}
+        \end{itemize}
     \end{minipage}
     \begin{minipage}{0.23\textwidth}
         \includegraphics[width=\textwidth]{img/image_CV.png}
@@ -71,7 +72,7 @@
 \end{minipage}
 
 
-\begin{minipage}[t]{0.26\textwidth}
+\begin{minipage}[t]{0.28\textwidth}
     \begin{mdframed}[style=cadreCompetences]
         \section{LOGICIELS}
         \subsection{Dessin Technique}
@@ -129,13 +130,6 @@
                     \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
                     \includegraphics[scale=0.20]{img/half_star.png} \hspace{-0.2cm}
                     \includegraphics[scale=0.20]{img/empty_star.png}}
-                \item{Octave
-                    \hfill
-                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
-                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
-                    \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
-                    \includegraphics[scale=0.20]{img/half_star.png} \hspace{-0.2cm}
-                    \includegraphics[scale=0.20]{img/empty_star.png}}
             \end{itemize}
         \subsection{Bureautique}
             \begin{itemize}
@@ -162,7 +156,7 @@
                     \includegraphics[scale=0.20]{img/empty_star.png}}
             \end{itemize}
 
-        \section{PROGRAM.}
+        \section{Programmation.}
         \subsection{Programmation application}
             \begin{itemize}
                 \item{VBA
@@ -208,7 +202,7 @@
         \section{LANGUES}
         \subsection{Anglais : C1 \newline (855 - Toeic 2015)}
             \begin{itemize}
-                \item{Compréh.
+                \item{Compréhension
                     \hfill
                     \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
                     \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
@@ -225,7 +219,7 @@
             \end{itemize}
         \subsection{Allemand : C1 \newline (881 - WIDAF 2015)}
             \begin{itemize}
-                \item{Compréh.
+                \item{Compréhension
                     \hfill
                     \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
                     \includegraphics[scale=0.20]{img/star.png} \hspace{-0.2cm}
@@ -245,53 +239,53 @@
             \begin{itemize}
                 \item{squash, vélotourisme}
                 \item{série tv, lecture}
-                \item{robotique}
+                \item{robotique, développement web}
             \end{itemize}
     \end{mdframed}
 \end{minipage}
 \hfill
-\begin{minipage}[t]{0.70\textwidth}
+\begin{minipage}[t]{0.68\textwidth}
     \vspace{0.15cm}
     \section{FORMATION}
         \begin{itemize}
-            \item{2012--2016 : Diplome d'Ingénieur en Génie Mécanique INSA Strasbourg (Anciennement ENSAIS)}
-            \item{2010--2012 : Classe Préparatoire intégrée INSA Strasbourg DeutschInsa (Moitié des enseignements en Allemand)}
-            \item{Juin 2010 : Baccalauréat mention européenne Allemand Obtenu avec mention Bien}
+            \item{2012--2016 : \textbf{Diplôme d'Ingénieur en Génie Mécanique} INSA Strasbourg (Anciennement ENSAIS)}
+            \item{2010--2012 : Classe Préparatoire intégrée INSA Strasbourg \textbf{DeutschInsa} \newline (Moitié des enseignements en Allemand)}
+            \item{Juin 2010 : Baccalauréat mention européenne Allemand -- mention \textbf{Bien}}
         \end{itemize}
 
     \section{MILTON ROY : 1 entreprise, plusieurs expériences}
-    \subsection{Juin 2018--Maintenant : Relais technique entre équipe agitation et Responsable Bureau d'Études}
+    \subsection{Juin 2018 -- Maintenant : Relais technique entre l'équipe agitation et le responsable Bureau d'Études}
     \begin{itemize}%
-        \item Partage du temps de travail entre le site d’Avon (77) où travaille l’équipe Bureau d’Études agitation et Pont Saint Pierre (27)
-        \item Maîtrise de Unigraphix NX et Autocad en autonomie
-        \item Réalisation d’études d’agitation : Plans de détails, coupe, encombrement et gestion données ERP pour mise en production
-        \item Voyage à Pune (Inde) en tant que consultant sur le dimensionnement mécanique pour le développement d’un outil automatique de chiffrage d’agitateurs.
-        \item Formation de l’équipe Indienne pour le développement d’un marché local
+        \item{Partage du temps de travail entre le site d’Avon (Équipe agitation) et Pont Saint Pierre (Production)}
+        \item{Maîtrise de Unigraphics NX et Autocad par apprentissage en autonomie}
+        \item{Études agitateurs: Plans de détails et d'encombrement et gestion données ERP }
+        \item{Voyage à Pune (Inde) pour définir les calculs mécaniques d'un outil de chiffrage.} 
+        \item{Formation de l’équipe Indienne pour le développement d’un marché local}
     \end{itemize}
 
-    \subsection{Juin 2017--Juin 2018 : Ingénieur Études Pompe doseusen}
+    \subsection{Juin 2017 -- Juin 2018 : Ingénieur Études Pompe doseuse}
     \begin{itemize}
-        \item Maîtrise de Solidworks par un apprentissage en autonomie.
-        \item Réalisation d’études pompe : Plans de détails, plans coupe, plans d’encombrements et gestion des données dans l’ERP pour mise en production
-        \item Réalisation de calculs en soutien des projeteurs : échange thermique (analytique), fréquence propre(FEA), calcul contraintes (FEA et analytique), ...
-        \item Projet d’automatisation des plans d’encombrement de pompe par macro Solidworks. Pilotage de Solidworks par Excel
+        \item{Maîtrise de Solidworks par un apprentissage en autonomie.}
+        \item{Études pompe: Plans de détails, plans coupe, plans d’encombrements et gestion des données ERP}
+        \item{Calculs : échange thermique(analytique), fréquences propres(FEA), calcul contraintes(FEA et analytique), ...}
+        \item{Automatisation des plans d’encombrement par macro Solidworks(VBA)}
     \end{itemize}
 
-    \subsection{Septembre 2016--Juin 2017 : Participation au projet de tranfert de production de Samoreau(77) à Pont-Saint-Pierre(27)}
+    \subsection{Septembre 2016 -- Juin 2017 : Participation au projet de tranfert de production de Samoreau(77) à Pont-Saint-Pierre(27)}
     \begin{itemize}
-        \item Design des cuves et circuits hydrauliques des moyens d’essais pour agitateurs (verticaux et horizontaux).
-        \item Développement d’outils d’analyse des données techniques de l’ERP pour tous les services (supply chain, documentation, production,...)
-        \item Soutien technique pour l’adaptation des process et transfert des données techniques dans l’ERP (JD Edwards)
-        \item Projet d’automatisation des nomenclatures (Excel) et plans d’encombrement d’agitateurs (format, SVG)
+        \item{Design des cuves et circuits hydrauliques des moyens d’essais pour agitateurs}
+        \item{Développement d’outils d’analyse des données techniques de l’ERP pour tous les services (supply chain, documentation, production,...)}
+        \item{Soutien technique pour l’adaptation des process et transfert des données techniques dans l’ERP (JD Edwards)}
+        \item{Automatisation des nomenclatures (Excel) et plans d’encombrement (format SVG)}
     \end{itemize}
 
 
-    \subsection{2011--2016 : Stages dans différents sites de l'entreprise}
+    \subsection{2011 -- 2016 : Stages dans différents sites de l'entreprise}
     \begin{itemize}
-        \item Juin à Août 2011 – Samoreau (77) – Mesures des propriétés hydrauliques d’hélices d’agitateurs
-        \item Mars à Août 2014 – Samoreau (77) – Améliorations de feuilles de calculs de dimensionnement d’agitateurs
-        \item Juin à Août 2015 – Sunderland (Angleterre) – Design d’un nouvel espace de test pour compresseurs
-        \item Mars à Août 2016 – Pont-Saint-Pierre (27) – Rationalisation d’une gamme de doseurs de pompes doseuses
+        \item{Juin à Août 2011 – Samoreau (77) – Mesures des propriétés hydrauliques d’hélices d’agitateurs}
+        \item{Mars à Août 2014 – Samoreau (77) – Améliorations de feuilles de calculs de dimensionnement d’agitateurs}
+        \item{Juin à Août 2015 – Sunderland (Angleterre) – Design d’un nouvel espace de test pour compresseurs}
+        \item{Mars à Août 2016 – Pont-Saint-Pierre (27) – Rationalisation d’une gamme de doseurs de pompes doseuses}
     \end{itemize}
 \end{minipage}
 
